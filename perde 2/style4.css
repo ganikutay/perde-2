@@ -1,0 +1,345 @@
+/* BODY */
+body{
+    background:#1e2238;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    height: 135px;
+}
+
+
+/*submit butonumuzu ayarliyoruz*/
+input[type="submit"]{
+	width: 80%;
+    
+    background-color: rgb(20, 63, 121);
+    color: white;
+    padding: 12px 18px;
+    margin: 7px 10%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+/*submit butonuna hover olayı gerçekleştirğinde arkaplan rengini degistiriyoruz */
+input[type="submit"]:hover{
+	background-color: rgb(55, 107, 175);
+    
+    /*color: rgb(49, 133, 182);*/
+
+    transition: box-shadow 0.3s;
+    box-shadow: 0px 10px 20px 2px rgba(255, 255, 255, 0.1) ,10px 0px 20px 2px rgba(255, 255, 255, 0.1), 0px -10px 20px -2px rgba(255, 255, 255, 0.1), -10px 0px 20px -2px rgba(255, 255, 255, 0.1); 
+
+}
+
+/* SubmitID'ye ait elemanlarin harf aralığını arttır ve harfleri kalinlastirir */
+#SubmitID{
+
+	letter-spacing: 5px;
+    font-weight: 700;
+}
+
+
+
+
+#header{
+    text-align: center;
+    margin-left: 50px;
+}
+
+
+h1{               /* BASLIK HEADER 1 */
+
+    /*padding-bottom: 15px; /* H1 ve ANASAYFA-LOGO da paddingler verdik, birinde alt birinde ust ve normal hizaya geldiler, aksi taktirde biri yukarda biri asagida kaliyordu ve marginle duzeltemedim.*/
+    /*background-color: blue;*/
+    width: 250px; 
+    margin: 0;   
+}
+
+
+h1::first-letter{
+    font-size: 70px;
+}
+
+
+/* anasayfa-logo     ANASAYFA LOGO   */
+#anasayfa-logo{
+    
+    width: 100px;
+    padding-top: 15px;
+    clear: both; /*?????*/
+    
+    position: absolute; /* #anasayfa-logo alttaki #text-div i kapsadigi icin. Burayi ABSOLUTE yapiyoruz. Yani alttaki #text-div buraya gore konumlanacaktir!!!*/
+}
+
+
+#logo-div{
+    display: inline-block;
+    width: auto;
+    height: 140px;
+   
+}
+
+
+#text-div{
+    display: inline-block;
+    width: auto;
+    
+    position: relative;     /* #anasayfa-logo tarafinda aciklamasini yaptim!!!*/
+    left: 90px;
+    bottom: 30px;
+   
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/* SOLDAKI KUCUK LOGO  */
+#logo{
+    /*background-image: url('gain-logo.png');*/
+    width: 50px;
+    height: 60px;
+    margin-left: 30px;
+    
+
+    
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    
+}
+
+/* logo HOVER */
+#logo:hover{
+    /*background-image: url('gain-logo-tersi.png');
+    width: "35px";
+    margin-left: 40px;
+    position: absolute;
+    top: 40px;*/
+    filter:invert(100%); /* Renkleri tersine cevirme */
+
+}
+
+
+
+
+
+/* gaincoinfiyat NORMAL */
+#gaincoinfiyat{
+    color: green;
+    
+    height: 50px;
+    padding-top: 12.5px;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 15px; 
+    position: absolute;
+    top: 46px;
+    left: 80px;
+
+    border-left: 2px solid white;
+    border-radius: 1px;
+    padding-left: 5px;
+
+    
+}
+
+/* gaincoinfiyat HOVER */
+#gaincoinfiyat:hover{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 15px; 
+    position: absolute;
+    top: 46px;
+    left: 80px;
+}
+
+
+
+
+
+
+/* gaincoin NORMAL */
+#gaincoin{
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 1px; 
+    position: absolute;
+    top: 46px;
+    left: 173px;
+    
+    border-right: 2px solid white;
+    border-radius: 1px;
+    
+    /*background-color: violet;*/
+    width: 60px;
+    
+}
+
+/* gaincoin HOVER */
+#gaincoin:hover{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 1px; 
+    position: absolute;
+    top: 46px;
+    left: 173px;
+}
+
+
+#bsc{
+    /*color: black;*/
+    /*background-color: violet;*/
+    display: inline;
+    clear: both;
+    color: rgb(245, 188, 3) ;/* !importent koyuldugunda hover verilmiyor ,calismiyor*/
+    font-weight: 700;
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 5px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 55px;
+    left: 240px;
+    width: 130px;
+}
+
+#bsc:hover{
+    transition: 0.6s; /* normal yazilarda box-shadow yazmiyoruz!!!!!!*/
+    color: rgb(132, 0, 255);
+}
+
+
+
+
+
+
+    /* Connect butonumuzu ayarliyoruz*/
+    #ConnectID{
+	width: 80px;
+    float: right; /*butonu sayfanin sag tarafina yolladik*/
+    
+    font-size: 15px;
+    background-color: rgb(12, 116, 29);
+    color: white;
+    padding: 10px 10px;
+    /*margin: 7px 0;*/
+    margin-top: 40px;
+    margin-right: 8%; /*sagdan % 8 uzaklastirdim.Sayfa buyusede kuculsede*/
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    }
+
+
+    /* Connect butonuna hover olayı gerçekleştirğinde arkaplan rengini degistiriyoruz */
+    #ConnectID:hover{
+        background-color: rgb(43, 192, 55);
+        /*color: rgb(49, 133, 182);*/
+
+        width: 80px;
+        font-size: 15px;
+
+
+
+        transition: box-shadow 0.3s;
+        /*transition-timing-function: ease;     pek bi ise yaramadi*/
+
+        /*box-shadow: 0px 10px 20px 2px rgba(0,0,0,0.1) ,10px 0px 20px 2px rgba(0,0,0,0.1), 0px -10px 20px -2px rgba(0,0,0,0.1), -10px 0px 20px -2px rgba(0,0,0,0.1); 
+    */
+        box-shadow: 0px 10px 20px 2px rgba(52, 231, 133, 0.1) ,10px 0px 20px 2px rgba(52, 231, 133, 0.1), 0px -10px 20px -2px rgba(52, 231, 133, 0.1), -10px 0px 20px -2px rgba(52, 231, 133, 0.1); 
+
+    
+    }
+
+
+
+
+    /* TAGS */
+
+    .tags{                /* toplu olarak hareketlerini ayarlayabiliriz*/
+        
+        margin: 0;
+        margin-right: 25px;
+        padding: 0;
+        /*margin-left: 50px;*/
+        margin-top: 0;
+        float: right;
+        position: relative;
+        top: 15px;
+        
+    }
+
+
+    
+    
+    .tags li{
+        list-style: none;
+        display: inline;
+        margin-right: 5px;
+        margin-top: -20px;
+        
+    }
+    
+    .tags li a{           /* teker teker a larin marginlerini vb ayarlayabiliriz*/
+        color: rgb(24, 24, 179);
+        font-weight: 800;
+        font-size: 20px;
+        text-decoration: none;
+        margin-right: 15px;
+        
+    }
+
+    .tags li a:hover{
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        text-decoration: none;
+        
+    }
+
+
+
+    
+
+
+
+
+
+    hr{
+        margin-top: 35px;
+    }
+
+
+
+    #main{
+    }
+
+
+
+
+
+/* paragraflari ince bir cizgiyle bolme ornegi
+#deneme-coin{
+    float: left;
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-color: white;
+    column-rule-width: 1px;
+
+}
+*/
